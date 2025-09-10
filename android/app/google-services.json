@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009727907917",
+    "project_id": "flutter-login-ef753",
+    "storage_bucket": "flutter-login-ef753.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009727907917:android:3911b3463b08da5560d404",
+        "android_client_info": {
+          "package_name": "com.example.chess_game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOLs861eTn-aIL88DHlRKzLG1YRCt8huE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009727907917:android:ad8ca28ca827e0bb60d404",
+        "android_client_info": {
+          "package_name": "com.example.login_page"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOLs861eTn-aIL88DHlRKzLG1YRCt8huE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
