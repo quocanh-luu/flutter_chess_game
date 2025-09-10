@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -40,49 +41,49 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBiOzieSslypm9ZM64OETHKwrMTUQvlFVQ',
-    appId: '1:1009727907917:web:259683a334b4477260d404',
-    messagingSenderId: '1009727907917',
-    projectId: 'flutter-login-ef753',
-    authDomain: 'flutter-login-ef753.firebaseapp.com',
-    storageBucket: 'flutter-login-ef753.firebasestorage.app',
-    measurementId: 'G-2G4LJXLV72',
+  static FirebaseOptions get web => FirebaseOptions(
+    apiKey: dotenv.env['WEB_API_KEY']!,
+    appId: dotenv.env['WEB_APP_ID']!,
+    messagingSenderId: dotenv.env['WEB_MESSAGING_SENDER_ID']!,
+    projectId: dotenv.env['WEB_PROJECT_ID']!,
+    authDomain: dotenv.env['WEB_AUTH_DOMAIN'],
+    storageBucket: dotenv.env['WEB_STORAGE_BUCKET'],
+    measurementId: dotenv.env['WEB_MEASUREMENT_ID'],
   );
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDOLs861eTn-aIL88DHlRKzLG1YRCt8huE',
-    appId: '1:1009727907917:android:3911b3463b08da5560d404',
-    messagingSenderId: '1009727907917',
-    projectId: 'flutter-login-ef753',
-    storageBucket: 'flutter-login-ef753.firebasestorage.app',
-  );
+  static FirebaseOptions get android => FirebaseOptions(
+        apiKey: dotenv.env['ANDROID_API_KEY']!,
+        appId: dotenv.env['ANDROID_APP_ID']!,
+        messagingSenderId: dotenv.env['ANDROID_MESSAGING_SENDER_ID']!,
+        projectId: dotenv.env['ANDROID_PROJECT_ID']!,
+        storageBucket: dotenv.env['ANDROID_STORAGE_BUCKET'],
+      );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAkz_7_W86xXI8_N9OKh9x_q3wkRXTHxMk',
-    appId: '1:1009727907917:ios:84c2e9417892f9d460d404',
-    messagingSenderId: '1009727907917',
-    projectId: 'flutter-login-ef753',
-    storageBucket: 'flutter-login-ef753.firebasestorage.app',
-    iosBundleId: 'com.example.chessGame',
-  );
+  static FirebaseOptions get ios => FirebaseOptions(
+        apiKey: dotenv.env['IOS_API_KEY']!,
+        appId: dotenv.env['IOS_APP_ID']!,
+        messagingSenderId: dotenv.env['IOS_MESSAGING_SENDER_ID']!,
+        projectId: dotenv.env['IOS_PROJECT_ID']!,
+        storageBucket: dotenv.env['IOS_STORAGE_BUCKET'],
+        iosBundleId: dotenv.env['IOS_BUNDLE_ID'],
+      );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAkz_7_W86xXI8_N9OKh9x_q3wkRXTHxMk',
-    appId: '1:1009727907917:ios:84c2e9417892f9d460d404',
-    messagingSenderId: '1009727907917',
-    projectId: 'flutter-login-ef753',
-    storageBucket: 'flutter-login-ef753.firebasestorage.app',
-    iosBundleId: 'com.example.chessGame',
-  );
+  static FirebaseOptions get macos => FirebaseOptions(
+        apiKey: dotenv.env['MACOS_API_KEY']!,
+        appId: dotenv.env['MACOS_APP_ID']!,
+        messagingSenderId: dotenv.env['MACOS_MESSAGING_SENDER_ID']!,
+        projectId: dotenv.env['MACOS_PROJECT_ID']!,
+        storageBucket: dotenv.env['MACOS_STORAGE_BUCKET'],
+        iosBundleId: dotenv.env['MACOS_BUNDLE_ID'],
+      );
 
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBiOzieSslypm9ZM64OETHKwrMTUQvlFVQ',
-    appId: '1:1009727907917:web:58679e8c4a43bf9560d404',
-    messagingSenderId: '1009727907917',
-    projectId: 'flutter-login-ef753',
-    authDomain: 'flutter-login-ef753.firebaseapp.com',
-    storageBucket: 'flutter-login-ef753.firebasestorage.app',
-    measurementId: 'G-BR5HE5EJCJ',
-  );
+  static FirebaseOptions get windows => FirebaseOptions(
+        apiKey: dotenv.env['WINDOWS_API_KEY']!,
+        appId: dotenv.env['WINDOWS_APP_ID']!,
+        messagingSenderId: dotenv.env['WINDOWS_MESSAGING_SENDER_ID']!,
+        projectId: dotenv.env['WINDOWS_PROJECT_ID']!,
+        authDomain: dotenv.env['WINDOWS_AUTH_DOMAIN'],
+        storageBucket: dotenv.env['WINDOWS_STORAGE_BUCKET'],
+        measurementId: dotenv.env['WINDOWS_MEASUREMENT_ID'],
+      );
 }
