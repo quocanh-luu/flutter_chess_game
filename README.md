@@ -1,16 +1,25 @@
-# chess_game
+#  Flutter Chess
 
-A new Flutter project.
+Ein Schachspiel entwickelt als Teamprojekt im Rahmen des Semesters.  
+Es bietet drei Spielmodi:
+- **Play with Computer** – wählbar in 3 Schwierigkeitsgraden  
+- **Local Play** – zwei Spieler am selben Gerät  
+- **Online Play** – mit Account-System und Echtzeit-Chat  
 
-## Getting StartedS
+---
 
-This project is a starting point for a Flutter application.
+##  Features
+- Flutter-basiert (Cross-Platform)  
+- KI-Gegner mit drei Schwierigkeitsstufen  
+- Multiplayer: lokal und online  
+- Benutzerkonten & Authentifizierung mit Google Firebase
+- Integrierter Echtzeit-Chat  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+###  Team 
+Dieses Projekt wurde entwickelt von:
+- Quoc Anh Luu
+- Noah Beisert
+- Justin Dolenski
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
